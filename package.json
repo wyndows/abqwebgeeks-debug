@@ -11,12 +11,19 @@
 		"type": "git",
 		"url": "https://github.com/dylan-mcdonald/abqwebgeeks-debug.git"
 	},
-	"dependencies": {
-		"bootstrap": "3.3.6",
-		"font-awesome": "4.6.3"
-	},
 	"devDependencies": {
+		"bootstrap-loader": "^1.0.10",
+		"bootstrap-sass": "3.3.6",
+		"css-loader": "^0.23.1",
+		"html-loader": "^0.4.3",
 		"html-webpack-plugin": "^2.15.0",
+		"extract-text-webpack-plugin": "^1.0.1",
+		"file-loader": "^0.8.5",
+		"node-sass": "^3.8.0",
+		"resolve-url-loader": "^1.5.0",
+		"sass-loader": "^4.0.0",
+		"style-loader": "0.13.1",
+		"url-loader": "^0.5.7",
 		"webpack": "^1.13.0",
 		"webpack-dev-server": "^1.14.1",
 		"webpack-merge": "^0.14.0"
