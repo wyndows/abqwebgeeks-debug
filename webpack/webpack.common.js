@@ -42,7 +42,9 @@ module.exports = {
 		}),
 
 		new HtmlWebpackPlugin({
-			template: helpers.root('public_html') + '/index.html'
+			inject: 'head',
+			filename: helpers.root('public_html') + '/head-utils.php',
+			template: helpers.root('webpack') + '/head-utils.php'
 		})
 	]
 };
