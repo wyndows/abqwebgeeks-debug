@@ -1,5 +1,7 @@
 .DS_Store
 /.idea
+/.sync-config.cson
 /vendor
 /node_modules
 /public_html/dist/
+/public_html/head-utils.php
