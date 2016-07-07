@@ -4,7 +4,7 @@ require_once("head-utils.php");
 ?>
 	<body>
 		<main class="container">
-			<h1>Hi ABQ Web Geeks</h1>
+			<h1><i class="fa fa-terminal" aria-hidden="true"></i> Hi ABQ Web Geeks</h1>
 		</main>
 	</body>
 </html>
