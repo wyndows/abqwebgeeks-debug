@@ -12,6 +12,7 @@ $PAGE_TITLE = "Factorial Using Recursion";
 require_once(dirname(__DIR__) . "/head-utils.php");
 ?>
 	<body>
+	<?php require_once(dirname(__DIR__) . "/partials/nav.php"); ?>
 		<main class="container">
 			<h1>Factorial Using Recursion</h1>
 			<p><?php $x = 4; echo $x; ?>! = <?php echo factorial($x); ?></p>
