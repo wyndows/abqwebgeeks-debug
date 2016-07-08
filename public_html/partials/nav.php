@@ -16,10 +16,15 @@
 				</a>
 			</div>
 
-			<div class="navbar-collapse" ng-class="{collapse: navCollapsed}">
-				<ul class="nav navbar-nav navbar-right" ng-click="toggleCollapse();">
+			<div class="navbar-collapse" uib-collapse="navCollapsed">
+				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/">Home</a></li>
-					<li><a href="/recursion/">Recursion</a></li>
+					<li class="dropdown" uib-dropdown>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" uib-dropdown-toggle>Code Examples <span class="caret"></span></a>
+						<ul class="dropdown-menu" uib-dropdown-menu>
+							<li><a href="/recursion/">Recursion</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
