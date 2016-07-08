@@ -1,5 +1,7 @@
 var angular = require('angular');
-var app = angular.module("AbqWebgeeksDebug", []);
+var collapse = require('angular-ui-bootstrap/src/collapse');
+var dropdown = require('angular-ui-bootstrap/src/dropdown/index-nocss.js');
+var app = angular.module("AbqWebgeeksDebug", [collapse, dropdown]);
 
 app.directive("bootstrapBreakpoint", ["$window", function($window) {
 	// define standard Bootstrap breakpoints
