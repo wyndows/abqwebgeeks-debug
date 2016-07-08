@@ -36,6 +36,24 @@ app.directive("bootstrapBreakpoint", ["$window", function($window) {
 	});
 }]);
 
+app.controller("FactorialController", ["$http", "$scope", function($http, $scope) {
+	$scope.answer = null;
+	$scope.factorialInput = 4;
+
+	$scope.getAnswer = function(factorialInput) {
+		$http.get("/api/factorial/" + factorialInput)
+			.then(function(result) {
+				if(result.data.status === 200) {
+					$scope.answer = result.data.answer;
+				}
+			});
+	};
+
+	if($scope.answer === null) {
+		$scope.getAnswer($scope.factorialInput);
+	}
+}]);
+
 app.controller("NavController", ["$scope", function($scope) {
 	$scope.breakpoint = null;
 	$scope.navCollapsed = null;

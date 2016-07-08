@@ -14,8 +14,24 @@ require_once(dirname(__DIR__) . "/head-utils.php");
 	<body class="sfooter">
 	<?php require_once(dirname(__DIR__) . "/partials/nav.php"); ?>
 		<main class="container sfooter-content">
-			<h1>Factorial Using Recursion</h1>
-			<p><?php $x = 4; echo $x; ?>! = <?php echo factorial($x); ?></p>
+			<div ng-controller="FactorialController">
+				<h1>Factorial Using Recursion</h1>
+				<form class="form-horizontal well" ng-submit="getAnswer(factorialInput);">
+					<h2>Test Factorial Function</h2>
+					<div class="form-group">
+						<label for="factorialInput">Input</label>
+						<div class="input-group">
+							<div class="input-group-addon">
+								<i class="fa fa-hashtag" aria-hidden="true"></i>
+							</div>
+							<input class="form-control" type="number" name="factorialInput" min="0" step="1" ng-change="getAnswer(factorialInput);" ng-model="factorialInput" ng-required="true" />
+						</div>
+					</div>
+					<button type="submit" class="btn btn-info btn-lg"><i class="fa fa-calculator"></i> Calculate</button>
+					<button type="reset" class="btn btn-warning btn-lg"><i class="fa fa-ban"></i> Cancel</button>
+				</form>
+				<h3>{{ factorialInput }}! = {{ answer}}</h3>
+			</div>
 			<hr />
 			<h2>Setting Up the Debugger in Atom</h2>
 			<p>The purpose of this simple example is to get started with the debugger in Atom. First, the debugger will need to be installed. To install it:</p>
