@@ -6,7 +6,8 @@ var helpers = require('./helpers');
 module.exports = {
 	entry: {
 		'vendor': helpers.root('webpack') + '/vendor.js',
-		'app': helpers.root('app') + '/app.js'
+		'app': helpers.root('app') + '/app.js',
+		'css': helpers.root('app') + '/app.css'
 	},
 
 	resolve: {

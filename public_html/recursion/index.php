@@ -11,9 +11,9 @@ function factorial(int $x) {
 $PAGE_TITLE = "Factorial Using Recursion";
 require_once(dirname(__DIR__) . "/head-utils.php");
 ?>
-	<body>
+	<body class="sfooter">
 	<?php require_once(dirname(__DIR__) . "/partials/nav.php"); ?>
-		<main class="container">
+		<main class="container sfooter-content">
 			<h1>Factorial Using Recursion</h1>
 			<p><?php $x = 4; echo $x; ?>! = <?php echo factorial($x); ?></p>
 			<hr />
@@ -58,5 +58,6 @@ require_once(dirname(__DIR__) . "/head-utils.php");
 			<p>Using XDebug in this remote debugging mode is incredibly convenient and informative. Multiple developers can debug code concurrently with minimal effort. However, this does present networking and security concerns. On the network end, XDebug works by making a direct connection from the server to the developer on port 9000. This works without any additional configuration if developers are on the same network as the server <strong>OR</strong> over an IPv6 connection. This has the awkward consequence of requiring remote developers to create a <a href="http://portforward.com/english/routers/port_forwarding/">port forwarding</a> rule on their home routers.</p>
 			<p>This also presents a security concern in that the debug data is invaluable information to an attacker. <em>Having XDebug enabled on a live server is unsafe at any speed.</em> The better solution is to isolate the development server by setting up a <a href="https://openvpn.net/">Virtual Private Network (VPN)</a> or by using a local instance such as <a href="https://box.scotch.io/">ScotchBox</a>.</p>
 		</main>
+<?php require_once(dirname(__DIR__) . "/partials/footer.php"); ?>
 	</body>
 </html>

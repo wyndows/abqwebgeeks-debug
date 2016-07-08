@@ -1,13 +1,19 @@
 <header ng-controller="NavController">
 	<bootstrap-breakpoint></bootstrap-breakpoint>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" aria-expanded="false" ng-click="toggleCollapse();">
 					<span class="sr-only">Toggle navigation</span>
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</button>
-				<a class="navbar-brand" href="/">Debugging de Deep Dive Dylan</a>
+				<a class="navbar-brand" href="/">
+					<span class="fa-stack">
+						<i class="fa fa-bug fa-stack-1x"></i>
+						<i class="fa fa-ban fa-stack-2x text-danger"></i>
+					</span>
+					Debugging de Deep Dive Dylan
+				</a>
 			</div>
 
 			<div class="navbar-collapse" ng-class="{collapse: navCollapsed}">
