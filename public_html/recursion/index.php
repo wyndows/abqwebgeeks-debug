@@ -1,13 +1,4 @@
 <?php
-
-function factorial(int $x) {
-	if($x === 0 || $x === 1) {
-		return(1);
-	} else {
-		return($x * factorial($x - 1));
-	}
-}
-
 $PAGE_TITLE = "Factorial Using Recursion";
 require_once(dirname(__DIR__) . "/head-utils.php");
 ?>
