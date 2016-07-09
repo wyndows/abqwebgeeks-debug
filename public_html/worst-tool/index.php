@@ -10,12 +10,12 @@ require_once(dirname(__DIR__) . "/head-utils.php");
 	<?php require_once(dirname(__DIR__) . "/partials/nav.php"); ?>
 		<main class="container sfooter-content">
 			<h1>Worst Tool for the Job</h1>
-			<p>Write this later. :D</p>
-			<h2>How can we Best Debug?</h2>
 			<blockquote>
 				<p>It's 2014, yet we debug like it's 1984.</p>
 				<footer>Darin Kelkhoff</footer>
 			</blockquote>
+			<p>With all the tools at our disposal, developers still follow old fashioned ways of debugging and tracing problems through code. New paradigms require new ways of debugging code, especially when dealing with concurrency, promises, and observables.</p>
+			<h2>How can we Best Debug?</h2>
 			<p>The preceding quote is from my software architect from my previous job. What was referring to was the fact that developers will use/overuse commands that print stuff the console/stdout in order to see the state of a variable as a program runs.</p>
 			<table class="table table-bordered table-responsive table-striped table-word-wrap">
 				<tr>
