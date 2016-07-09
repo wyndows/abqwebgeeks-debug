@@ -38,6 +38,19 @@ app.directive("bootstrapBreakpoint", ["$window", function($window) {
 	});
 }]);
 
+app.controller("DifferenceController", ["$scope", function($scope) {
+	$scope.answerCollapsed = true;
+	$scope.hintCollapsed = true;
+
+	$scope.toggleAnswer = function() {
+		$scope.answerCollapsed = !($scope.answerCollapsed);
+	};
+
+	$scope.toggleHint = function() {
+		$scope.hintCollapsed = !($scope.hintCollapsed);
+	};
+}]);
+
 app.controller("FactorialController", ["$http", "$scope", function($http, $scope) {
 	$scope.answer = null;
 	$scope.factorialInput = 4;
