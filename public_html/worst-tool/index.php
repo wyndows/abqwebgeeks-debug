@@ -1,4 +1,8 @@
 <?php
+require_once(dirname(__DIR__, 2) . "/vendor/autoload.php");
+$highlighter = new Highlight\Highlighter();
+$highlighter->setAutodetectLanguages(["php"]);
+
 $PAGE_TITLE = "Worst Tool for the Job";
 require_once(dirname(__DIR__) . "/head-utils.php");
 ?>
@@ -37,6 +41,14 @@ require_once(dirname(__DIR__) . "/head-utils.php");
 			</ul>
 			<h2>A Smarter Way: Use Exceptions</h2>
 			<p>To solve both problems mentioned above, use exceptions to your advantage. Exceptions can provide the exact same data with additional context that is resistant to race conditions since exceptions can also provide exact context as to how the problem occurred.</p>
+			<div>
+				<?php
+					$highlighted = $highlighter->highlightAuto(file_get_contents("car.php"));
+					$output = "<pre class=\"hljs " . $highlighted->language . "\">" . $highlighted->value . "</pre>";
+					echo $output;
+				?>
+			</div>
+			<p>The preceding code will unconditionally throw an exception. This is useful in debugging complicated errors because it gives you the <em>stack trace</em> of how the error, which is the lines of code and methods PHP encountered when the exception occurred. This gives you the enhanced view of not only a custom message and printing a variable to the console, as above, but also the trace of how the code arrived at this exception.</p>
 		</main>
 <?php require_once(dirname(__DIR__) . "/partials/footer.php"); ?>
 	</body>
