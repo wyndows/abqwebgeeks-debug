@@ -11,6 +11,10 @@ caption {
 	caption-side: bottom;
 }
 
+.inlineLogo {
+	height: 1em;
+}
+
 .sfooter {
 	display: flex;
 	flex-direction: column;
@@ -29,10 +33,6 @@ caption {
 .table-word-wrap {
 	table-layout: fixed;
 	word-wrap: break-word;
-}
-
-#angularLogo {
-	height: 1em;
 }
 
 /* solarized light for syntax highlighting */

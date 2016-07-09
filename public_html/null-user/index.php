@@ -5,10 +5,10 @@ require_once(dirname(__DIR__) . "/head-utils.php");
 	<body class="sfooter">
 	<?php require_once(dirname(__DIR__) . "/partials/nav.php"); ?>
 		<main class="container sfooter-content">
-			<h1><img class="inlineLogo" src="/images/angular.svg" alt=""> Installing Batarang</h1>
+			<h1><img class="inlineLogo" src="/images/php.svg" alt=""> Installing Batarang</h1>
 			<blockquote>
-				<p>The landlady of a boarding-house is a parallelogram - that is, an oblong angular figure, which cannot be described, but which is equal to anything.</p>
-				<footer>Stephen Leacock</footer>
+				<p>Object-oriented programming is an exceptionally bad idea which could only have originated in California.</p>
+				<footer>Edsger Dijkstra</footer>
 			</blockquote>
 			<p>Batarang is a plugin for Google Chrome that gives you a sophisticated view of an Angular site. It groups controllers and lets one examine the scope of an Angular project.</p>
 			<h2><i class="fa fa-chrome" aria-hidden="true"></i> Installing Batarang on Google Chrome</h2>

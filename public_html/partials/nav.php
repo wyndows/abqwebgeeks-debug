@@ -25,7 +25,7 @@
 							<li><a href="/introduction/">Introduction</a></li>
 							<li><a href="/worst-tool/">Worst Tool for the Job</a></li>
 							<li><a href="/installing-xdebug/">Installing XDebug</a></li>
-							<li><a href="/installing-batarang/"><img id="angularLogo" src="/images/angular.svg" alt=""> Installing Batarang</a></li>
+							<li><a href="/installing-batarang/"><img class="inlineLogo" src="/images/angular.svg" alt=""> Installing Batarang</a></li>
 						</ul>
 					</li>
 					<li class="dropdown" uib-dropdown>
@@ -33,6 +33,7 @@
 						<ul class="dropdown-menu" uib-dropdown-menu>
 							<li><a href="/recursion/">Recursion</a></li>
 							<li><a href="/whats-the-difference/">What's the Difference?</a></li>
+							<li><a href="/null-user/"><img class="inlineLogo" src="/images/php.svg" alt=""> NULL User</a></li>
 						</ul>
 					</li>
 				</ul>
