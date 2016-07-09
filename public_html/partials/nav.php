@@ -24,7 +24,7 @@
 						<ul class="dropdown-menu" uib-dropdown-menu>
 							<li><a href="/introduction/">Introduction</a></li>
 							<li><a href="/worst-tool/">Worst Tool for the Job</a></li>
-							<li><a href="/installing-xdebug/">Installing XDebug</a></li>
+							<li><a href="/installing-xdebug/"><img class="inlineLogo" src="/images/php.svg" alt=""> Installing XDebug</a></li>
 							<li><a href="/installing-batarang/"><img class="inlineLogo" src="/images/angular.svg" alt=""> Installing Batarang</a></li>
 						</ul>
 					</li>
