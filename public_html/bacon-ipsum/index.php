@@ -6,13 +6,18 @@ require_once(dirname(__DIR__) . "/head-utils.php");
 	<?php require_once(dirname(__DIR__) . "/partials/nav.php"); ?>
 		<main class="container sfooter-content" ng-controller="BaconController">
 			<h1><img class="inlineLogo" src="/images/angular.svg" alt=""> Bacon Ipsum</h1>
+			<blockquote>
+				<p>Software testing is a sport like hunting, it's bughunting.</p>
+				<footer>Amit Kalantri</footer>
+			</blockquote>
+			<p>This Angular example isn't reacting to the user's selections. Can you figure out why?</p>
 			<form class="form-horizontal well" ng-submit="getData(filler, paragraphs);">
 				<h2>Customize Bacon Ipsum</h2>
 				<hr />
 				<div class="form-group">
 					Filler?
 					<label class="radio-inline">
-						<input type="radio" name="filler" ng-model="filler" ng-value="true" ng-change="getData(filler, paragraphs);"> Yes
+						<input type="radio" name="filler" ng-model="filler" ng-value="false" ng-change="getData(filler, paragraphs);"> Yes
 					</label>
 					<label class="radio-inline">
 						<input type="radio" name="filler" ng-model="filler" ng-value="false" ng-change="getData(filler, paragraphs);"> No
