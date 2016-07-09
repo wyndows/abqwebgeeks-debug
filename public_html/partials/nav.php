@@ -34,6 +34,7 @@
 							<li><a href="/recursion/">Recursion</a></li>
 							<li><a href="/whats-the-difference/">What's the Difference?</a></li>
 							<li><a href="/null-user/"><img class="inlineLogo" src="/images/php.svg" alt=""> NULL User</a></li>
+							<li><a href="/bacon-ipsum/"><img class="inlineLogo" src="/images/angular.svg" alt=""> Bacon Ipsum</a></li>
 						</ul>
 					</li>
 				</ul>

@@ -38,6 +38,41 @@ app.directive("bootstrapBreakpoint", ["$window", function($window) {
 	});
 }]);
 
+app.controller("BaconController", ["$http", "$scope", function($http, $scope) {
+	var endpoint = "https://baconipsum.com/api/";
+
+	$scope.baconData = null;
+	$scope.filler = false;
+	$scope.paragraphs = 3;
+
+	$scope.getData = function(filler, paragraphs) {
+		if(filler === true) {
+			$scope.getMeat(paragraphs);
+		} else {
+			$scope.getMeatAndFiller(paragraphs);
+		}
+	};
+
+	$scope.getMeat = function(paragraphs) {
+		$http.get(endpoint + "?type=all-meat&paras=" + paragraphs)
+		.then(function(result){
+			$scope.baconData = result.data;
+		});
+	};
+
+	$scope.getMeatAndFiller = function(paragraphs) {
+		$http.get(endpoint + "?type=meat-and-filler&paras=" + paragraphs)
+		.then(function(result){
+			$scope.baconData = result.data;
+		});
+	};
+
+	if($scope.baconData === null) {
+		$scope.getData($scope.filler, $scope.paragraphs);
+	}
+}]);
+
+
 app.controller("DifferenceController", ["$scope", function($scope) {
 	$scope.answerCollapsed = true;
 	$scope.hintCollapsed = true;
