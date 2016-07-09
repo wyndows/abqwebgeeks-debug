@@ -83,5 +83,6 @@ try {
 } catch(Exception $exception) {
 	// this will always happen since the exception is universally thrown
 	echo "Exception: " . $exception->getMessage() . PHP_EOL;
+	echo $exception->getTraceAsString() . PHP_EOL;
 	var_dump($car);
 }

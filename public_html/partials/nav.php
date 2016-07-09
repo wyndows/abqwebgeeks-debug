@@ -24,6 +24,7 @@
 						<ul class="dropdown-menu" uib-dropdown-menu>
 							<li><a href="/introduction/">Introduction</a></li>
 							<li><a href="/worst-tool/">Worst Tool for the Job</a></li>
+							<li><a href="/installing-xdebug/">Installing XDebug</a></li>
 						</ul>
 					</li>
 					<li class="dropdown" uib-dropdown>
