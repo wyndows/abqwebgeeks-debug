@@ -1,8 +1,4 @@
 <?php
-require_once(dirname(__DIR__, 2) . "/vendor/autoload.php");
-$highlighter = new Highlight\Highlighter();
-$highlighter->setAutodetectLanguages(["php"]);
-
 $PAGE_TITLE = "Installing XDebug";
 require_once(dirname(__DIR__) . "/head-utils.php");
 ?>
