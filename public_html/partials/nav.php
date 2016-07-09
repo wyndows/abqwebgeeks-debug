@@ -25,7 +25,7 @@
 							<li><a href="/introduction/">Introduction</a></li>
 							<li><a href="/worst-tool/">Worst Tool for the Job</a></li>
 							<li><a href="/installing-xdebug/">Installing XDebug</a></li>
-							<li><a href="/installing-batarang/">Installing Batarang</a></li>
+							<li><a href="/installing-batarang/"><img id="angularLogo" src="/images/angular.svg" alt=""> Installing Batarang</a></li>
 						</ul>
 					</li>
 					<li class="dropdown" uib-dropdown>

@@ -5,7 +5,7 @@ require_once(dirname(__DIR__) . "/head-utils.php");
 	<body class="sfooter">
 	<?php require_once(dirname(__DIR__) . "/partials/nav.php"); ?>
 		<main class="container sfooter-content">
-			<h1>Installing Batarang</h1>
+			<h1><img id="angularLogo" src="/images/angular.svg" alt=""> Installing Batarang</h1>
 			<blockquote>
 				<p>The landlady of a boarding-house is a parallelogram - that is, an oblong angular figure, which cannot be described, but which is equal to anything.</p>
 				<footer>Stephen Leacock</footer>
