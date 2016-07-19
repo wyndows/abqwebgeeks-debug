@@ -1,3 +1,5 @@
+C:\Users\wyndows\Desktop\Bootcamp\git\debug\abqwebgeeks-debug\practice.php
+
 <?php
 // as an object set
 
@@ -8,6 +10,8 @@ $o3 = new StdClass;
 
 $s->attach($o1);
 $s->attach($o2);
+
+
 
 var_dump($s->contains($o1));
 var_dump($s->contains($o2));
